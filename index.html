@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>John Benedict Severo</title>
+
+  <style>
+    /* ---------- Basic settings ---------- */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0d0d0d;
+      color: #ddd;
+      line-height: 1.6;
+    }
+
+    section { padding: 90px 10% 50px; }
+
+    h2 { color: #fff; font-size: 30px; margin-bottom: 20px; }
+
+    /* ---------- Navigation bar ---------- */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #000;
+      padding: 15px 10%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      z-index: 10;
+    }
+
+    nav .brand { color: #a855f7; font-weight: bold; }
+
+    nav a { color: #ddd; text-decoration: none; margin-left: 18px; }
+    nav a:hover { color: #a855f7; }
+
+    /* ---------- Home ---------- */
+    /* To use your own photo, replace the gradient with: url("background.jpg") */
+    #home {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background:
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        linear-gradient(135deg, #000, #3b1a6b);
+      background-size: cover;
+      background-position: center;
+    }
+
+    #home h1 { font-size: 52px; color: #fff; margin-bottom: 15px; }
+    #home p { max-width: 500px; margin-bottom: 25px; }
+
+    .button {
+      background: #7c3aed;
+      color: #fff;
+      padding: 12px 28px;
+      border-radius: 6px;
+      text-decoration: none;
+    }
+    .button:hover { background: #9333ea; }
+
+    /* ---------- Cards (used in Education, Hobbies, Contact) ---------- */
+    .card {
+      background: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 10px;
+      padding: 20px;
+    }
+    .card:hover { border-color: #a855f7; }
+
+    .card h3 { color: #fff; }
+    .card span { color: #a855f7; font-size: 14px; }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .alt { background: #151515; }
+
+    .icon { font-size: 32px; }
+
+    p { margin-bottom: 10px; }
+
+    /* ---------- Phones ---------- */
+    @media (max-width: 600px) {
+      #home h1 { font-size: 34px; }
+      nav { justify-content: center; }
+      nav a { margin: 0 8px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation bar -->
+  <nav>
+    <span class="brand">John Benedict Severo</span>
+    <div>
+      <a href="#home">Home</a>
+      <a href="#about">About Me</a>
+      <a href="#education">Education</a>
+      <a href="#hobbies">Hobbies</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Home -->
+  <section id="home">
+    <h1>JOHN BENEDICT SEVERO</h1>
+    <p>Hi, welcome to my website. I’m a college student learning new things every day.</p>
+    <a class="button" href="#about">Explore My Profile</a>
+  </section>
+
+  <!-- About Me -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m a 2nd year college student at Partido State University. I’m still learning and I want to keep improving my skills little by little.</p><br>
+    <p><b>Full Name:</b> John Benedict Severo</p>
+    <p><b>Birthday:</b> July 3, 2007</p>
+    <p><b>Address:</b> Coyaoyao, Tigaon, Camarines Sur, Philippines</p>
+    <p><b>Education:</b> 2nd Year College, Partido State University</p>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="alt">
+    <h2>Educational Background</h2>
+    <div class="cards">
+      <div class="card">
+        <span>Elementary</span>
+        <h3>Coyaoyao Elementary School</h3>
+        <p>Tigaon, Camarines Sur</p>
+      </div>
+      <div class="card">
+        <span>High School</span>
+        <h3>San Rafael High School</h3>
+        <p>Tigaon, Camarines Sur</p>
+      </div>
+      <div class="card">
+        <span>College</span>
+        <h3>Partido State University</h3>
+        <p>2nd Year</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hobbies -->
+  <section id="hobbies">
+    <h2>My Hobbies</h2>
+    <div class="cards">
+      <div class="card"><div class="icon">🎧</div><h3>Listening to music</h3></div>
+      <div class="card"><div class="icon">💻</div><h3>Exploring technology</h3></div>
+      <div class="card"><div class="icon">⌨️</div><h3>Learning programming</h3></div>
+      <div class="card"><div class="icon">🎬</div><h3>Watching movies or series</h3></div>
+      <div class="card"><div class="icon">💡</div><h3>Discovering creative ideas</h3></div>
+    </div>
+  </section>
+
+  <!-- Goals -->
+  <section id="goals" class="alt">
+    <h2>My Goals</h2>
+    <p>I want to finish college, get better at programming and web development, and build a good future in the IT field.</p>
+  </section>
+
+  <!-- Contact (replace the placeholders with your own info) -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="cards">
+      <div class="card"><h3>Email</h3><p>your email here</p></div>
+      <div class="card"><h3>Facebook</h3><p>your link here</p></div>
+      <div class="card"><h3>Instagram</h3><p>your link here</p></div>
+    </div>
+  </section>
+
+</body>
+</html>
